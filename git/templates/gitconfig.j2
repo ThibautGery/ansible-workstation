@@ -1,0 +1,46 @@
+# {{ ansible_managed }}
+
+[user]
+  email = {{ git_username }}
+  name = {{ git_usermail }}
+[color]
+  ui = auto
+[alias]
+  st = status
+  stp = status --porcelain
+  ci = commit
+  di = diff
+  br = branch
+  co = checkout
+  ps = push
+  pl = pull
+  rz = reset --hard HEAD
+  pullr = pull --rebase
+  unstage = reset HEAD
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lolf = log --graph --decorate --pretty=oneline
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ru = remoteupdate
+  lpush = "!git --no-pager log origin/$(git currentbranch)..HEAD --oneline"
+  lpull = "!git --no-pager log HEAD..origin/$(git currentbranch) --oneline"
+  whatsnew = "!git diff origin/$(git currentbranch)...HEAD"
+  whatscoming = "!git diff HEAD...origin/$(git currentbranch)"
+  currentbranch = "!git branch | grep \"^\\*\" | cut -d \" \" -f 2"
+  rmd = "!git status --porcelain | cut -d' ' -f3  | xargs git rm"
+  sp = "!git stash && git pull && git stash pop"
+  g = "!gitg"
+[merge]
+  tool = vimdiff
+[core]
+  excludesfile = /home/tge/.gitignore
+  editor = {{ git_coreeditor }}
+[push]
+  default = matching
+[giggle]
+  main-window-maximized = true
+  main-window-geometry = 1026x684+99+71
+  history-view-vpane-position = 357
+  main-window-view = HistoryView
+  file-view-vpane-position = 365
+[branch]
+        autosetuprebase = always

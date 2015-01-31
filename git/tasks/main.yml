@@ -1,0 +1,13 @@
+
+---
+
+- name: Add git repository
+  apt_repository: repo="ppa:git-core/ppa"
+
+- name: Install git base packages (Ubuntu)
+  apt: pkg=git state=installed
+
+- name: Push user config file
+  template:
+    src=gitconfig.j2
+    dest=~/.gitconfig
