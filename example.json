@@ -1,4 +1,8 @@
 {
-    "git_username": "Thibaut Géry",
-    "git_usermail": "thibaut.gery@gmail.com"
+    "git": {
+        "username": "Thibaut Géry",
+        "usermail": "thibaut.gery@gmail.com",
+        "coreeditor": "vim"
+    },
+    "user": "tge"
 }

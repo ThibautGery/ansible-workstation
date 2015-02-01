@@ -1,4 +1,6 @@
-git_username: YOUR_USERNAME
-git_usermail: YOUR_EMAIL
-
-git_coreeditor: vim
+---
+  user : YOUR_USERNAME
+  git:
+    username: YOUR_USERNAME
+    usermail: YOUR_EMAIL
+    coreeditor: vim

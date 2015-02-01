@@ -1,6 +1,6 @@
 [user]
-  email = {{ git_username }}
-  name = {{ git_usermail }}
+  email = {{ git.usermail }}
+  name = {{ git.username }}
 [color]
   ui = auto
 [alias]
@@ -31,7 +31,7 @@
   tool = vimdiff
 [core]
   excludesfile = /home/tge/.gitignore
-  editor = {{ git_coreeditor }}
+  editor = {{ git.coreeditor }}
 [push]
   default = matching
 [giggle]

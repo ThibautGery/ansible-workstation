@@ -3,6 +3,7 @@
 
 - hosts: all
   sudo: yes
+  sudo_user: "{{ user }}"
   roles:
   - role: git
   - role: vim
