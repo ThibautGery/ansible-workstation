@@ -1,0 +1,19 @@
+
+---
+
+- name: Install vim
+  apt: pkg=vim state=installed
+
+- name: Create vim plugin directories
+  file: path=~/.vim/{{ item }} recurse=true state=directory
+  with_items:
+    - "bundle"
+    - "autoload"
+
+- name: Get pathogène (cool package manager for vim)
+  get_url: url=https://tpo.pe/pathogen.vim dest=~/.vim/autoload/pathogen.vim mode=0700
+
+- name: Push vim config file
+  template:
+    src=vimrc.j2
+    dest=~/.vimrc
