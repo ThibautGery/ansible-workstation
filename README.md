@@ -7,7 +7,7 @@ Requirements
 ------------
 
  * Work station :
-   - Ubuntu
+   - Ubuntu 64 bit
    - Python 2.7
    - SSH enabled (sudo apt-get install ssh)
    - Port 22 accessible (configure iptables)
@@ -23,6 +23,7 @@ Component
 
  * Git
  * Vim
+ * Atom
  * Java
 
 

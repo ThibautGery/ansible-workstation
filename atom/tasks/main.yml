@@ -1,0 +1,17 @@
+
+---
+
+    -
+      name: "check if atom is installed"
+      stat: path=/usr/bin/atom
+      register: atom_installation
+
+    -
+      name: "get Atom"
+      get_url: "url=https://atom.io/download/deb dest=/tmp/atom.deb"
+      when: atom_installation.stat.exists == False
+
+    -
+      name: "install Atom"
+      apt: deb=/tmp/atom.deb state=present
+      when: atom_installation.stat.exists == False

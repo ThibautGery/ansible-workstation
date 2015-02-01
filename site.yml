@@ -6,3 +6,4 @@
   roles:
   - role: git
   - role: vim
+  - role: atom
