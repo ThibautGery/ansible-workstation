@@ -2,6 +2,7 @@
 # This Playbook would deploy the whole mongodb cluster with replication and sharding.
 
 - hosts: all
+  sudo: yes
   roles:
   - role: git
   - role: vim

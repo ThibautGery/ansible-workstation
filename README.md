@@ -29,7 +29,9 @@ Component
 Utilisation
 -----------
 
-All you have to do is `ansible-playbook site.yml`
+All you have to do is `ansible-playbook site.yml  --extra-vars '@example.json' -K` and replace example.json with yours settings.
+
+
 
 Todo
 ----
