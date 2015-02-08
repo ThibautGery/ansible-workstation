@@ -4,5 +4,11 @@
         "usermail": "thibaut.gery@gmail.com",
         "coreeditor": "vim"
     },
-    "user": "tge"
+    "user": "tge",
+    "java_packages": [
+      "oracle-java7-installer",
+      "oracle-java8-installer"
+    ],
+    "maven_version_patch" : 5,
+    "maven_redis_sha256sum":"8C190264BDF591FF9F1268DC0AD940A2726F9E958E367716A09B8AAA7E74A755"
 }

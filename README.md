@@ -6,6 +6,8 @@ This project is the [ansible](http://docs.ansible.com/index.html) scripts to ins
 Requirements
 ------------
 
+### Machine
+
  * Work station :
    - Ubuntu 64 bit
    - Python 2.7
@@ -18,19 +20,26 @@ Requirements
 
 It's possible to only use one Machine
 
-Component
----------
+### Galaxy
+
+ * [Java](https://galaxy.ansible.com/list#/roles/1209)
+ * [Maven](https://galaxy.ansible.com/list#/roles/458)
+
+Components
+----------
 
  * Git
  * Vim
  * Atom
  * Java
+ * Maven
 
 
 Utilisation
 -----------
+Get external dependencies : `ansible-galaxy install smola.java`
 
-All you have to do is `ansible-playbook site.yml  --extra-vars '@example.json' -K` and replace example.json with yours settings.
+Run `ansible-playbook site.yml  --extra-vars '@example.json' -K -U tge` and replace example.json with yours settings.
 
 
 
