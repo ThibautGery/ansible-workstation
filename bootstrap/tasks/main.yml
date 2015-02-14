@@ -1,0 +1,9 @@
+
+---
+
+
+- name: Install curl
+  apt: pkg=curl state=installed
+
+- name: Install htop
+  apt: pkg=htop state=installed
