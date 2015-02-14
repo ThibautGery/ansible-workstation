@@ -5,10 +5,14 @@
         "coreeditor": "vim"
     },
     "user": "tge",
-    "java_packages": [
-      "oracle-java7-installer",
-      "oracle-java8-installer"
+    " oracle_jdk_java_versions": [
+      "7",
+      "8"
     ],
-    "maven_version_patch" : 5,
+    "scala_versions": ["2.11.5"],
+    "scala_default_version": "2.11.5",
+    "scala_sbt_version": "0.13.1",
+    "oracle_jdk_java_version_default": 7,
+    "maven_version_patch": 5,
     "maven_redis_sha256sum":"8C190264BDF591FF9F1268DC0AD940A2726F9E958E367716A09B8AAA7E74A755"
 }

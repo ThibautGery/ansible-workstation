@@ -11,3 +11,6 @@
 
 - name: JAVA_HOME
   lineinfile: dest=/home/tge/.bashrc regexp='^export JAVA_HOME' line='export JAVA_HOME=/usr/lib/jvm/java-7-oracle'
+
+- name: MVN_OPTS
+  lineinfile: dest=/home/tge/.bashrc regexp='^export MAVEN_OPTS' line='export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"'

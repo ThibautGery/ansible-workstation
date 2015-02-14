@@ -5,9 +5,11 @@
   sudo: yes
   sudo_user: "root"
   roles:
+  - role: bootstrap
   - role: git
   - role: vim
   - role: atom
-  - role: smola.java
+  - role: ANXS.oracle-jdk
+  - role: ANXS.scala
   - role: robdyke.maven
   - role: javaConfig
